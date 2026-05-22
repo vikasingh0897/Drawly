@@ -1,0 +1,36 @@
+# --- System & Editor Files ---
+.DS_Store
+Thumbs.db
+*.log
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Sublime Text Specifics ---
+*.sublime-project
+*.sublime-workspace
+.sublime-project
+.sublime-workspace
+
+# --- Node.js Dependency Folders ---
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# --- Local Environment & Secret Files (CRUCIAL) ---
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# --- Production Build Output Directories ---
+dist/
+backend/dist/
+frontend/dist/
+
+# --- Optional Frontend/Vite Dev Cache Outputs ---
+frontend/.vite/
+.eslintcache
