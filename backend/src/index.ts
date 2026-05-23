@@ -29,6 +29,11 @@ const io = new Server(server, {
 io.on('connection', (socket) => {
   console.log(`Client attached: ${socket.id}`);
 
+  registerRoomHandlers(io, socket);
+  registerCanvasHandlers(io, socket);
+  registerGameHandlers(io, socket);
+  registerChatHandlers(io, socket);
+
   socket.on('disconnect', (reason) => {
     console.log(`Client disconnected: ${socket.id} (Reason: ${reason})`);
   });
